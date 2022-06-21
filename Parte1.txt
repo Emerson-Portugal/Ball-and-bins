@@ -1,0 +1,13 @@
+Enumerate(Balls, Boxes)
+  if Boxes<=0 
+    Error
+  elseif Boxes=1 
+    Box[1] = Balls
+    PrintBoxes
+  else
+    forall b in 0..Balls 
+      Box[Boxes] = b
+      Enumerate(Balls-b, Boxes-1)
+    endfor
+  endif
+end

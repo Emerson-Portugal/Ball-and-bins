@@ -1,0 +1,29 @@
+Box = (0,0)
+Enumerate(3, 2)
+  b=0
+  Box = (0,0)
+  Enumerate(3,1)
+    Box = (3,0) 
+    Print!
+  b=1 
+  Box = (0,1)
+  Enumerate(2,1)
+    Box = (2,1)
+    Print!
+  b=2
+  Box = (0,2)
+  Enumerate(1,1)
+    Box = (1,2)
+    Print!
+  b=3   
+  Box = (0,3)
+  Enumerate(0,1)
+    Box = (0,3)
+    Print!
+
+ Output:
+
+ (3,0)
+ (2,1)
+ (1,2)
+ (0,3)
